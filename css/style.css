@@ -14,6 +14,7 @@ a { color:#666; text-decoration:none; }
 #header,#nav,#content,#floor,#brand{
 	width: 1190px;
 	margin: 0 auto;
+	
 }
 #top,#banner,#ensure,#bottom,#link,#foot{
 	width: 100%;
