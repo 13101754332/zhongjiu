@@ -1,0 +1,196 @@
+body{
+	background: #f2f2f2;
+	overflow: hidden;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font_login/iconfont.eot');
+  src: url('../font_login/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font_login/iconfont.woff') format('woff'),
+  url('../font_login/iconfont.ttf') format('truetype'),
+  url('../font_login/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*logo*/
+#logo{
+	width: 900px;
+	height: 80px;
+	margin: 0 auto;
+}
+#logo img,#logo span{
+	float: left;
+}
+#logo img{
+	margin-top: 10px;
+}
+#logo span{
+	display: block;
+	height: 46px;
+	border-left: 1px solid #ccc;
+	margin-top: 15px;
+	font-size: 24px;
+	line-height: 46px;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+/*content*/
+#content{
+	width: 890px;
+	height: 400px;
+	margin:50px auto;
+	border: 5px solid #ccc;
+	position: relative;
+}
+.con-left,.con-right{
+	float: left;
+}
+.con-right{
+	width: 430px;
+	height: 400px;
+	background: #fff;
+}
+.con-right .log-list{
+	margin: 10px auto;
+	overflow: hidden;
+	width: 360px;
+}
+.con-right .log-list li{
+	text-align: center;
+	float: left;
+	width: 160px;
+	padding: 10px;
+}
+.con-right .log-list li a{
+	display: block;
+	width: 160px;
+	font-size: 18px;
+}
+.con-right .log-list .first{
+	border-right: 1px solid #ccc;
+}
+.con-right .log-list .active a{
+	color: red;
+	font-weight: 900;
+}
+.con-right .tip{
+	width: 320px;
+	height: 23px;
+	font-size: 12px;
+	line-height: 23px;
+	border: 1px solid #f6c090;
+	background: #fef4e5;
+	margin: 0 auto;
+	text-align: center;
+}
+.username,.password{
+	width: 320px;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #b8c1c8;
+	margin: 10px auto;
+}
+.username span,.password span{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: #ddd;
+	font-size: 30px;
+	line-height: 38px;
+	float: left;
+}
+.username input,.password input{
+	width: 280px;
+	height: 36px;
+	border: 0;
+	float: left;
+	font-size: 18px;
+	text-indent:20px;
+}
+.radio{
+	line-height: 16px;
+}
+.radio input{
+	float: left;
+	margin-left: 57px;
+}
+.radio a{
+	float: right;
+	margin-right: 57px;
+}
+#btn{
+	display: block;
+	width: 320px;
+	height: 40px;
+	border: 0;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	background: #f6342f;
+	margin: 20px auto;
+}
+#btn:hover{
+	background: #ff3b36;
+}
+/*hide*/
+.hide{
+	width: 300px;
+	margin: 0 auto;
+	border-top: 1px solid #ddd;
+	padding: 20px;
+	display: none;
+}
+.hide .qr{
+	width: 160px;
+	height: 160px;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+}
+.hide p{
+	line-height: 24px;
+	font-size: 14px;
+	text-align: center;
+	margin: 10px 0;
+}
+.hide p a{
+	margin-right: 20px;
+}
+.hide img{
+	margin: 0 auto;
+}
+.con-bottom{
+	position: absolute;
+	bottom: 0;
+	right: 72px;
+	overflow: hidden;
+}
+.con-bottom li{
+	text-align: center;
+	float: left;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 10px 5px 10px 5px;
+	line-height: 30px;
+	border-top: 1px solid #f4f4f4;
+	background: #fcfcfc;
+}
+.con-bottom li a{
+	padding: 0 15px 0 5px;
+	border-right: 1px solid gray;
+}
+.con-bottom li .last{
+	border-right: 0;
+}
+/*foot*/
+#foot{
+	text-align: center;
+	margin-top: 50px;
+}

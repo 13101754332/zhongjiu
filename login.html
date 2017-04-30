@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<Link Rel="SHORTCUT ICON" href="img/favicon.ico">
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<!--logo-->
+		<div id="logo">
+			<a href="index.html"><img src="img/logo.png"/></a>
+			<span>欢迎登录</span>
+			
+		</div>
+		<!--content-->
+		<div id="content">
+			<div class="con-left"><img src="img/login.png"/><img src=""/></div>
+			<div class="con-right">
+				<ul class="log-list">
+					<li><a href="javascript:;" class="first">扫码登录</a></li>
+					<li  class="active"><a href="javascript:;">账户登录</a></li>
+				</ul>
+				<!--账号登录-->
+				<div class="tip"><span class="iconfont">&#xe668;</span>公共场所不建议自动登录，以防账号丢失</div>
+				<form action="javascript:;">
+					<div class="username">
+						<span class="iconfont">&#xe62a;</span>
+						<input type="text" name="username" id="username" placeholder="帐号"/>
+					</div>
+					<div class="password">
+						<span class="iconfont">&#xe65e;</span>
+						<input type="password" name="password" id="password" placeholder="密码"/>
+					</div>
+					<div class="radio">
+						<input type="radio"/>自动登录<a href="#" class="hov">忘记密码</a>
+					</div>
+					<input type="button" name="button" id="btn" value="登录" />
+				</form>
+				<!--扫码登录-->
+				<div class="hide">
+					<img src="img/login-2.gif" class="qr"/>
+					<p>打开<a href="#" class="red">中酒网App</a>   扫描二维码</p>
+					<img src="img/login-jia.png"/>
+				</div>
+				
+				
+				<ul class="con-bottom">
+					<li><a href="#" class="hov"><span class="iconfont">&#xe607;</span>QQ</a></li>
+					<li><a href="#" class="hov"><span class="iconfont">&#xe64b;</span>微博</a></li>
+					<li><a href="#" class="hov"><span class="iconfont">&#xe600;</span>微信</a></li>
+					<li><a href="#" class="last red">立即注册</a></li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		<!--foot-->
+		<div id="foot">
+			Copyright © 2017   中酒网 版权所有
+		</div>
+	</body>
+</html>

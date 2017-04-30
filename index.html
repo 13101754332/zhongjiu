@@ -3,19 +3,1183 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>中酒网-白酒,红酒,葡萄酒,洋酒,保健酒,黄酒专业酒水零售平台</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<Link Rel="SHORTCUT ICON" href="img/favicon.ico">
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	<body>
-		<div id="top"></div>
-		<div id="header"></div>
-		<div id="nav"></div>
-		<div id="banner"></div>
-		<div id="content"></div>
-		<div id="floor"></div>
-		<div id="brand"></div>
-		<div id="ensure"></div>
-		<div id="bottom"></div>
-		<div id="link"></div>
-		<div id="foot"></div>
+		<!--top-->
+		<div id="top">
+			<div class="top-con">
+				<span>您好，欢迎来到 中酒网！</span>
+				<span><a href="#" class="red">去买家中心</a></span>
+				<span><a href="#" class="login login1">请登录</a></span>
+				<span><a href="#"
+					class="login">免费注册</a></span>
+				<ul id="top-nav">
+					<li class="ht-p">
+						<a href="#">我的中酒网<i></i></a>
+						<ul class="hide-top">
+							<li><a href="#">已卖到的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">已卖到的店铺</a></li>
+						</ul>
+					</li>
+					<li><a href="#">购物车<strong>0</strong>件</a></li>
+					<li class="ht-p">
+						<a href="#">微信端</a>
+						<div class="hide-top">
+							<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/Site/qrCode.png" />
+						</div>
+					</li>
+					<li class="ht-p">
+						<a href="#">APP</a>
+						<div class="hide-top">
+							<img src="img/app.jpg"/>
+							<p>扫描二维码</p>
+							<p class="red">下载手机客户端</p>
+						</div>
+					</li>
+					<li class="ht-p">
+						<a href="#">卖家中心<i></i></a>
+						<ul class="hide-top">
+							<li>商家入驻</li>
+							<li>已卖出商品</li>
+							<li>管理商品</li>
+						</ul>
+					</li>
+					<li class="ht-p">
+						<a href="#">网站导航<i></i></a>
+						<ul class="map hide-top">
+							<li>
+								<h3>买酒</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>
+								<h3>品牌</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>
+								<h3>其他</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>订购热线：400-798-9999</li>
+						</ul>
+					</li>
+					<li class="ht-p"><a href="#">订购热线：400-798-9999</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--header-->
+		<div id="header">
+			<a href="#"><img src="img/logo.png"/></a>
+			<a href="#"><img src="img/201610211352319102520.png" class="header-login"/></a>
+			<form action="javascript:;">
+				<div class="search">
+					<span>商品<i></i></span>
+				<input type="text" id="header-search" placeholder="茅台"/><input type="button" value="搜索" id="header-btn"/>
+				</div>
+				<a href="#" class="red">茅台醇</a>
+				<a href="#">青稞酒</a>
+				<a href="#">五星级</a>
+				<a href="#">泸州老窖</a>
+				<a href="#">洋河</a>
+				<a href="#">茅台</a>
+				<a href="#">五粮液</a>
+				<a href="#">国窖1573</a>
+				<a href="#">拉菲</a>
+			</form>
+		</div>
+		
+		<!--nav-->
+		<div id="nav">
+			<div class="nav-left">
+				<ul class="nav-l">
+					<li class="nav-l1"><a href="#"><span></span>全部商品分类</a></li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xe728;</span>白酒</a></h3>
+						<a href="#">茅台</a>
+						<a href="#" class="nav-active">牛栏山</a>
+						<a href="#">五粮液</a>
+					</li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xe62d;</span>葡萄酒</a></h3>
+						<a href="#" class="nav-active">拉菲</a>
+						<a href="#" >张裕</a>
+						<a href="#">黄尾袋鼠</a>
+					</li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xec23;</span>洋酒</a></h3>
+						<a href="#" class="nav-active">马爹利</a>
+						<a href="#" >人头马</a>
+						<a href="#">芝华士</a>
+					</li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xe601;</span>黄酒</a></h3>
+						<a href="#">尧喝酒</a>
+						<a href="#" class="nav-active">唐宋</a>
+						<a href="#">塔牌</a>
+					</li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xe638;</span>礼盒专区</a></h3>
+						<a href="#">国台豪礼</a>
+						<a href="#" class="nav-active">五粮液五星级</a>
+					</li>
+					<li>
+						<h3><a href="#"><span class="iconfont">&#xe61a;</span>婚庆专区</a></h3>
+						<a href="#" class="nav-active">茅台</a>
+						<a href="#">拉菲</a>
+						<a href="#">五粮液</a>
+					</li>
+				</ul>
+			</div>
+			<!--隐藏导航菜单-->
+				<div id="hide">
+					<!--隐藏导航菜单左侧-->
+					<div class="hide-left">
+						<h4>品牌</h4>
+						<ul class="hide-nav">
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">剑南春</a></li>
+							
+							
+						</ul>
+						<br />
+						<h4>类型</h4>
+						<ul class="hide-nav">
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+							<li><a href="#">酱香型</a></li>
+						</ul>
+						<br />
+						<h4>产区</h4>
+						<ul class="hide-nav">
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">贵州</a></li>
+						</ul>
+					</div>
+					<!--隐藏导航菜单右侧-->
+					<div class="hide-right">
+						<h4>推荐品牌</h4>
+						<a href="#"><img src="img/nav1.jpg" class="adv"/></a>
+						
+					</div>
+				</div>
+			<div class="nav-right">
+				<ul class="nav-r">
+					<li><a href="#" class="red">首页</a></li>
+					<li><a href="#" class="hov">白酒特惠区</a></li>
+					<li><a href="#" class="hov">红洋特惠区</a></li>
+					<li><a href="#" class="hov">新品推荐</a></li>
+					<li><a href="#" class="hov">积分商城</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--banner-->
+		<div id="banner">
+			<ul id="banner-bg">
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201704241031059286960.jpg);" class="top"></li>1</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201704260935415155020.jpg);"></li>2</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201612221730107521570.jpg);"></li>3</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201701031823100524360.jpg);"></li>4</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201701031823175560490.jpg);"></li>5</a>
+				<a href="#"><li style=";background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201612221730202057730.jpg)"></li>6</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201701031823271812660.jpg);"></li>7</a>
+				<a href="#"><li style="background-image:url(http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/ImageAd/201612221730294253900.jpg);"></li>8</a>
+			</ul>
+			<ul id="banner-nav">
+				<li class="bigger"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="banner-img">
+				<img src="img/banner-1.jpg" />
+				<img src="img/banner-2.jpg" class="bi-2"/>
+			</div>
+		</div>
+		
+		<!--content-->
+		<div id="content">
+			<div class="con-top">
+				<ul id="con-nav">
+				<li class="con-active">四月特惠</li>
+				<li>送礼佳选</li>
+				<li>高原青稞</li>
+				<li>好酒特惠</li>
+				<li>洋酒嘉年华</li>
+			</ul>
+			<a href="#">更多 >></a>
+			</div>
+			<ul class="con-list">
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+				<li><img src="img/jiu1.jpg"/></li>
+			</ul>
+			
+		</div>
+		
+		<!--floor-->
+		<div id="floor">
+			<!--f1-->
+			<div class="f1">
+				<div class="f1-top">
+					<h3>帮您选酒</h3>
+					<a href="#" class="more" class="hov">更多 >></a>
+					<ul class="f1-list">
+						<li><a href="javascript:;" class="hov">Hot！热卖</a><i></i></li>
+						<li><a href="javascript:;" class="hov">团员小聚</a><i></i></li>
+						<li><a href="javascript:;" class="hov">必备口粮</a><i></i></li>
+						<li><a href="javascript:;" class="hov">送礼佳品</a><i></i></li>
+						<li><a href="javascript:;" class="hov">大型宴请</a><i></i></li>
+					</ul>
+				</div>
+				<div class="f1-main">
+					<div class="main1">
+						<table>
+							<tr>
+								<td><a href="#" class="hov">贵州</a></td>
+								<td><a href="#" class="hov">四川</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">北京</a></td>
+								<td><a href="#" class="hov">青海</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">酱香型</a></td>
+								<td><a href="#" class="hov">浓香型</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">清香型</a></td>
+								<td><a href="#" class="hov">绵柔型</a></td>
+							</tr>
+						</table>
+						
+						<div class="m1-slider">
+							<ul class="ms-list">
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="ms-btnl"><</a>
+						<a href="javascript:;" class="ms-btnr">></a>
+					</div>
+					<div class="main2">
+						<div class="m2-1">
+							<a href="#"><img src="img/m2b.jpg"/></a>
+						</div>
+						<div class="m2-2">
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							
+						</div>
+					</div>
+					<div class="main2-hid">
+						<ul class="goods">
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0 br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="main3">
+						<a href="#"><img src="img/m3-1.jpg"/></a>
+						<a href="#"><img src="img/m3-2.jpg"/></a>
+						<a href="#"><img src="img/m3-3.jpg"/></a>
+						<a href="#" class="m3-4"><img src="img/m3-4.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<!--f2-->
+			<div class="f2">
+				<div class="f2-top">
+					<h3>白酒馆</h3>
+					<a href="#" class="more" class="hov">更多 >></a>
+					<ul class="f2-list">
+						<li><a href="javascript:;" class="hov">Hot！热卖</a><i></i></li>
+						<li><a href="javascript:;" class="hov">洋河</a><i></i></li>
+						<li><a href="javascript:;" class="hov">天佑德</a><i></i></li>
+						<li><a href="javascript:;" class="hov">茅台</a><i></i></li>
+						<li><a href="javascript:;" class="hov">五粮液</a><i></i></li>
+					</ul>
+				</div>
+				<div class="f2-main">
+					<div class="main1">
+						<table>
+							<tr>
+								<td><a href="#" class="hov">贵州</a></td>
+								<td><a href="#">四川</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">北京</a></td>
+								<td><a href="#" class="hov">青海</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">酱香型</a></td>
+								<td><a href="#" class="hov">浓香型</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">清香型</a></td>
+								<td><a href="#" class="hov">绵柔型</a></td>
+							</tr>
+						</table>
+						
+						<div class="m1-slider">
+							<ul class="ms-list">
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="ms-btnl"><</a>
+						<a href="javascript:;" class="ms-btnr">></a>
+					</div>
+					<div class="main2">
+						<div class="m2-1">
+							<a href="#"><img src="img/m2b.jpg"/></a>
+						</div>
+						<div class="m2-2">
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							
+						</div>
+					</div>
+					<div class="main2-hid">
+						<ul class="goods">
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0 br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="main3">
+						<a href="#"><img src="img/m3-1.jpg"/></a>
+						<a href="#"><img src="img/m3-2.jpg"/></a>
+						<a href="#"><img src="img/m3-3.jpg"/></a>
+						<a href="#" class="m3-4"><img src="img/m3-4.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<!--f3-->
+			<div class="f3">
+				<div class="f3-top">
+					<h3>红酒</h3>
+					<a href="#" class="more" class="hov">更多 >></a>
+					<ul class="f3-list">
+						<li><a href="javascript:;" class="hov">Hot！热卖</a><i></i></li>
+						<li><a href="javascript:;" class="hov">起泡酒</a><i></i></li>
+						<li><a href="javascript:;" class="hov">华夏长城</a><i></i></li>
+						<li><a href="javascript:;" class="hov">拉菲</a><i></i></li>
+						<li><a href="javascript:;" class="hov">张裕</a><i></i></li>
+					</ul>
+				</div>
+				<div class="f3-main">
+					<div class="main1">
+						<table>
+							<tr>
+								<td><a href="#" class="hov">贵州</a></td>
+								<td><a href="#" class="hov">四川</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">北京</a></td>
+								<td><a href="#" class="hov">青海</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">酱香型</a></td>
+								<td><a href="#" class="hov">浓香型</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">清香型</a></td>
+								<td><a href="#" class="hov">绵柔型</a></td>
+							</tr>
+						</table>
+						
+						<div class="m1-slider">
+							<ul class="ms-list">
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="ms-btnl"><</a>
+						<a href="javascript:;" class="ms-btnr">></a>
+					</div>
+					<div class="main2">
+						<div class="m2-1">
+							<a href="#"><img src="img/m2b.jpg"/></a>
+						</div>
+						<div class="m2-2">
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							
+						</div>
+					</div>
+					<div class="main2-hid">
+						<ul class="goods">
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0 br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="main3">
+						<a href="#"><img src="img/m3-1.jpg"/></a>
+						<a href="#"><img src="img/m3-2.jpg"/></a>
+						<a href="#"><img src="img/m3-3.jpg"/></a>
+						<a href="#" class="m3-4" /><img src="img/m3-4.jpg"/></a>
+					</div>
+				</div>
+			</div>	
+			<!--f4-->
+			<div class="f4">
+				<div class="f4-top">
+					<h3>洋酒啤酒</h3>
+					<a href="#" class="more" class="hov">更多 >></a>
+					<ul class="f4-list">
+						<li><a href="javascript:;" class="hov">Hot！热卖</a><i></i></li>
+						<li><a href="javascript:;" class="hov">伏特加</a><i></i></li>
+						<li><a href="javascript:;" class="hov">威士忌</a><i></i></li>
+					</ul>
+				</div>
+				<div class="f4-main">
+					<div class="main1">
+						<table>
+							<tr>
+								<td><a href="#" class="hov">贵州</a></td>
+								<td><a href="#" class="hov">四川</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">北京</a></td>
+								<td><a href="#" class="hov">青海</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">酱香型</a></td>
+								<td><a href="#" class="hov">浓香型</a></td>
+							</tr>
+							<tr>
+								<td><a href="#" class="hov">清香型</a></td>
+								<td><a href="#" class="hov">绵柔型</a></td>
+							</tr>
+						</table>
+						
+						<div class="m1-slider">
+							<ul class="ms-list">
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs2.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs3.jpg"/></a></li>
+										<li><a href="#"><img src="img/bs4.jpg"/></a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#"><img src="img/bs1.jpg"/></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="ms-btnl"><</a>
+						<a href="javascript:;" class="ms-btnr">></a>
+					</div>
+					<div class="main2">
+						<div class="m2-1">
+							<a href="#"><img src="img/m2b.jpg"/></a>
+						</div>
+						<div class="m2-2">
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							<a href="#"><img src="img/m2s.jpg"/></a>
+							
+						</div>
+					</div>
+					<div class="main2-hid">
+						<ul class="goods">
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li>
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+							<li class="bt-0 br-0">
+								<img src="img/m2-h.png"/>
+								<p class="red">￥158.00</p>
+								<p><a href="#" class="hov">42°牛栏山陈酿500ml(12瓶装)</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="main3">
+						<a href="#"><img src="img/m3-1.jpg"/></a>
+						<a href="#"><img src="img/m3-2.jpg"/></a>
+						<a href="#"><img src="img/m3-3.jpg"/></a>
+						<a href="#"  class="m3-4"><img src="img/m3-4.jpg"/></a>
+					</div>
+				</div>
+			</div>			
+			
+		</div>
+		
+		<!--brand-->
+		<div id="brand">
+			<h3>品牌旗舰店</h3>
+			<img src="img/brand1.jpg"/>
+			<div id="brand-slider">
+				<div class="bs-show">
+					<ul class="bs-outer">
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							<li><img src="img/bs1.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							<li><img src="img/bs2.jpg"/></li>
+							
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							<li><img src="img/bs3.jpg"/></li>
+							
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							<li><img src="img/bs4.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							<li><img src="img/bs5.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							<li><img src="img/bs6.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							<li><img src="img/bs7.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							<li><img src="img/bs8.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							<li><img src="img/bs9.jpg"/></li>
+							
+						</ul>
+					</li>
+					<li>
+						<ul class="bs-inner">
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+							<li><img src="img/bs10.jpg"/></li>
+						
+							
+						</ul>
+					</li>
+				</ul>
+				</div>
+				
+				<a href="javascript:;" id="btn-left"><</a>
+				<a href="javascript:;" id="btn-right">></a>
+			</div>
+			<img src="img/brand2.jpg"/>
+		</div>
+		
+		<!--ensure-->
+		<div id="ensure">
+			<ul>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+				<li>
+					<h3>正品保障</h3>
+					<p>厂家直接 正品防伪</p>
+				</li>
+			</ul>
+		</div>
+		
+		<!--bottom-->
+		<div id="bottom">
+			<div class="bottom-con">
+				<div class="bottom-left">
+					<a href="#"><img src="img/zj.png"/></a>
+					<a href="#"><img src="img/ls2.png"/></a>
+					<a href="#"><img src="img/yt2.png"/></a>
+				</div>
+				<div class="bottom-middle">
+					<ul>
+						<li class="bottom-active">购物指南</li>
+						<li><a href="#" class="hov">购物流程</a></li>
+						<li><a href="#" class="hov">用户注册协议</a></li>
+						<li><a href="#" class="hov">会员积分</a></li>
+						<li><a href="#" class="hov">关于发票</a></li>
+						<li><a href="#" class="hov">关于优优惠券</a></li>
+					</ul>
+					<ul>
+						<li class="bottom-active">配送说明</li>
+						<li><a href="#" class="hov">购物流程</a></li>
+						<li><a href="#" class="hov">会员积分</a></li>
+						<li><a href="#" class="hov">关于发票</a></li>
+						<li><a href="#" class="hov">关于优优惠券</a></li>
+					</ul>
+					<ul>
+						<li class="bottom-active">支付方式</li>
+						<li><a href="#" class="hov">购物流程</a></li>
+						<li><a href="#" class="hov">用户注册协议</a></li>
+						<li><a href="#" class="hov">关于发票</a></li>
+						<li><a href="#" class="hov">关于优优惠券</a></li>
+					</ul>
+					<ul>
+						<li class="bottom-active">售后服务</li>
+						<li><a href="#" class="hov">购物流程</a></li>
+						<li><a href="#" class="hov">用户注册协议</a></li>
+						<li><a href="#" class="hov">会员积分</a></li>
+						<li><a href="#" class="hov">会员积分</a></li>
+						<li><a href="#" class="hov">会员积分</a></li>
+					</ul>
+					<ul>
+						<li class="bottom-active">服务保障</li>
+						<li><a href="#" class="hov">购物流程</a></li>
+						<li><a href="#" class="hov">用户注册协议</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="bottom-right">
+					<div class="br-1">
+						<h5>手机中酒</h5>
+						<img src="img/app.jpg"/>
+						<p>下载APP</p>
+					</div>
+					<div class="br-2">
+						<h5>中酒微信</h5>
+						<img src="img/weixin.jpg"/>
+						<p><a href="#" class="hov">中酒官方微信</a></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--link-->
+		<div id="link">
+			<a href="#">关于中酒</a>|
+			<a href="#">媒体报道</a>|
+			<a href="#">加入中酒</a>|
+			<a href="#">品牌导航</a>|
+			<a href="#">品牌资讯</a>|
+			<a href="#">联系我们</a>
+		</div>
+		
+		<!--nav-->
+		<div id="foot">
+
+			<p>Copyright © 2017 中酒网(www.zhongjiu.cn) 版权所有 经营许可证编号：京ICP证150027号 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！</p>
+			<p>公司名称：中酒时代酒业（北京）有限公司 公司地址：北京市朝阳区高碑店乡半壁店村惠河南街1111号国投尚科大厦2层E202单元办公室 联系人：刘铮 联系方式：400-798-9999 社会信用代码证：911101055938071245 食品经营许可证</p>
+			<a href="#"><img src="img/authentication_01.png"/></a>
+			<a href="#"><img src="img/authentication_05.png"/></a>
+			<a href="#"><img src="img/authentication_05.png"/></a>
+			<a href="#"><img src="img/authentication_05.png"/></a>
+			<a href="#"><img src="img/authentication_07.png"/></a>
+			<a href="#"><img src="img/authentication_09.png"/></a>
+		</div>
+		
+		
+		<!--fix-left-->
+		<div id="fix-left">
+			<ul id="fix-list">
+				<li class="fix-active"><span>1F</span><b>帮您</b></li>
+				<li><span>2F</span><b>白酒</b></li>
+				<li><span>3F</span><b>红酒</b></li>
+				<li><span>4F</span><b>洋酒</b></li>
+			</ul>
+			
+		</div>
+		
+		
+		
+		<!--fix-right-->
+		<div id="fix-right">
+			<div id="person" class="hide-p">
+				<span class="iconfont">&#xe684;</span>
+				<div class="hide">个人中心<i></i></div>
+			</div>
+			<div id="shopcar">
+				<span class="iconfont">&#xe624;</span><br />购物车<b>0</b>
+			</div>
+			<div id="money" class="hide-p">
+				<span class="iconfont">&#xe629;</span>
+				<div class="hide">资产中心<i></i></div>
+			</div>
+			<div id="heart" class="hide-p">
+				<span class="iconfont">&#xe607;</span>
+				<div class="hide">关注商品<i></i></div>
+				
+			</div>
+			<div id="history" class="hide-p">
+				<span class="iconfont">&#xe606;</span>
+				<div class="hide">浏览历史<i></i></div>
+				
+			</div>
+			<div id="waiter" class="hide-p">客服
+				<div class="hide">中酒客服<i></i></div>
+			</div>
+			
+		</div>
 	</body>
 </html>
