@@ -87,6 +87,17 @@
     -ms-transition: 0.3s;        /* for IE */
     -o-transition: 0.3s;        /* for Opera */
 }
+#banner .banner-img .zzc{
+	width: 196px;
+	height: 242px;
+	position: absolute;
+	z-index: 5;
+	top: 248px;
+	background: rgba(96,96,96,.2);
+}
+#banner .banner-img .zzc:nth-of-type(1){
+	top: 0px;
+}
 #banner .banner-img img:hover{
 	transform: translateX(-5px);
 	-webkit-transform: translateX(-5px);   /* for Chrome || Safari */

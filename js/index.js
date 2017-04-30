@@ -86,6 +86,20 @@ $(function(){
 		$(this).addClass('con-active').siblings().removeClass('con-active');
 		$('.con-list li').children().attr('src','img/jiu'+(i+1)+'.jpg');
 	});
+	//banner遮罩层
+	$('.zzc:eq(0)').on('mouseover',function(){
+		$(this).hide();
+	});
+	$('.bi-1').on('mouseout',function(){
+		$('.zzc:eq(0)').fadeIn(300);
+	});
+	$('.zzc:eq(1)').on('mouseover',function(){
+		$(this).hide();
+	});
+	$('.bi-2').on('mouseout',function(){
+		$('.zzc:eq(1)').fadeIn(300);
+	});
+	
 	//floor区域
 	//f1
 	$('.f1-list li').on('mousemove',function(){

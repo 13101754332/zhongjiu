@@ -81,7 +81,9 @@ $(function(){
 		}
 		$('.number input').val(iGoods);
 	});
-	
+	$('.number input').change(function(){
+		iGoods=$('.number input').val();
+	})
 	//右侧热销商品选项卡
 	$('.hot-card span').on('mouseover',function(){
 		var iIndex = $(this).index();
@@ -95,8 +97,36 @@ $(function(){
 			$('.hd img').attr('src','img/wuliangye.png');
 		}
 	});
-	
-	
+	//商品详情介绍、评论、咨询栏随滚动事件固定
+	$(window).scroll(function(){
+		console.log($(window).scrollTop());
+		if($(window).scrollTop()>=850){
+			$('.introduce').css('position','fixed');
+		}else{
+			$('.introduce').css('position','absolute');
+		}
+	});
+	//introduce选项卡
+	$('.introduce a').on('click',function(){
+		$(this).addClass('in-act').siblings().removeClass('in-act');
+		if($(this).index()!=0){
+			$('.gd-name').hide();
+			$('.gd-pic').hide();
+			$('.detial-pic').hide();
+		}
+		if($(this).index()==1){
+			$(window).scrollTop(869);
+		}
+		if($(this).index()==2){
+			$(window).scrollTop(2172);
+		}
+		if($(this).index()==0){
+			$(window).scrollTop(840);
+			$('.gd-name').show();
+			$('.gd-pic').show();
+			$('.detial-pic').show();
+		}
+	});
 	
 	
 //area插件	
