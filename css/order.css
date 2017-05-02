@@ -24,3 +24,170 @@
 .step li:nth-of-type(2){
 	color: #62c92b;
 }
+
+/*content*/
+#content{
+	width: 990px;
+	overflow: hidden;
+	margin: 70px auto;
+	border: 1px solid #ddd;
+}
+.con-top{
+	height: 38px;
+	line-height: 38px;
+    background-color: #eff2f5;
+    padding-left:20px ;
+    font-size: 14px;
+}
+/*user-info*/
+.user-info{
+	overflow: hidden;
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.user-info h3{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.user-info h3 a{
+	margin-left: 20px;
+}
+.user-info label{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 50px;
+}
+.user-info .save{
+	display: block;
+	width: 140px;
+	height: 30px;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 900;
+	background: #ff4d50;
+	color: #fff;
+	margin-left: 50px;
+}
+/*send*/
+.send{
+	overflow: hidden;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.send h3{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.send p{
+	margin-left: 50px;
+	padding: 20px 0;
+}
+/*bill*/
+.bill{
+	overflow: hidden;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.bill h3{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.bill input:nth-of-type(1){
+	margin: 20px 0 20px 50px;
+}
+
+/*merchbill*/
+.merchbill{
+	overflow: hidden;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+.merchbill h3{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.mb-list{
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.table-title{
+	overflow: hidden;
+}
+.table-title span{
+	float: left;
+	background: #eff2f5;
+	text-align: center;
+	line-height: 25px;
+	width: 100px;
+	border-right: 1px solid #fff;
+	box-sizing: border-box;
+}
+.table-title span:nth-of-type(1){
+	width: 600px;
+}
+.good-list{
+	overflow: hidden;
+}
+.good-list li{
+	padding: 10px;
+	overflow: hidden;
+	border-bottom: 1px dashed #000;
+}
+.good-list li img,.good-list li span,.good-list li i{
+	float: left;
+}
+.good-list li span{
+	margin-left: 20px;
+}
+.good-list li span p{
+	line-height: 28px;
+}
+.good-list li i{
+	margin: 15px 50px;
+}
+.good-list li b,.good-list li strong{
+	float: right;
+	line-height: 55px;
+}
+.good-list li strong{
+	margin-right: 33px;
+}
+.good-list li b{
+	margin-right: 68px;
+}
+/*给卖家留言*/
+/*给卖家留言*/
+/*给卖家留言*/
+/*给卖家留言*/
+/*给卖家留言*/
+/*给卖家留言*/
+/*con-bottom*/
+.con-bottom{
+	height: 50px;
+	background: #eff2f5;
+	line-height: 50px;
+}
+.con-bottom a{
+	margin-left: 20px;
+}
+.con-bottom strong,.con-bottom span{
+	float: right;
+}
+.con-bottom strong{
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.con-bottom strong b{
+	font-size: 18px;
+	line-height: 45px;
+	margin: 0 5px;
+	font-weight: 100;
+}
+.con-bottom i{
+	font-style: normal;
+}
