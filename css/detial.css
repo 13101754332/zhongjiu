@@ -1,4 +1,7 @@
 /*商品详情页*/
+html,body{
+	height: 100%;
+}
 @font-face {
   font-family: 'iconfont';
   src: url('../font/iconfont.eot');
@@ -234,7 +237,6 @@ dt{
 	float: left;
 	width: 140px;
 	height: 48px;
-	background: rgb(194, 194, 194);
 	color: #fff;
 	padding: 0 15px 0 15px;
 	font-size: 20px;
@@ -242,6 +244,15 @@ dt{
 	border-radius: 5px;
 	margin: 20px;
 	text-align: center;
+	border: 1px solid #ff4d50;
+}
+#buy{
+	color: #fff;
+	background: #ff4d50;
+}
+#car{
+	color: #ff4d50;
+	background: #fff;
 }
 #buy span,#car span{
 	margin: 0 10px;
@@ -449,7 +460,6 @@ dt{
 /*右侧内容*/
 #content .con-right{
 	width: 910px;
-	overflow: hidden;
 	min-height: 800px;
 	_height: 800px; 
 	position: relative;
@@ -537,7 +547,7 @@ dt{
 /*evaluate无法自适应高度*/
 /*evaluate无法自适应高度*/
 .evaluate{
-	min-height: 1500px;
+	min-height: 200px;
 	_height:200px;
 	overflow: hidden;
 }
@@ -599,14 +609,13 @@ dt{
 .eva-top ul li:nth-of-type(2){
 	border-right: 1px solid #ccc;
 }
-.eva-list{
+.eva-buyer{
 	overflow: hidden;
 }
-.eva-buyer{
+.eva-list{
 	height: 40px;
 	background: #f7f7f7;
 }
-
 .eva-buyer .eva-list a{
 	float: left;
 	padding: 0 20px;

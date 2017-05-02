@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车结算</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingcar.css"/>
+		<Link Rel="SHORTCUT ICON" href="img/favicon.ico">
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/shoppingcar.js"></script>
+	</head>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div class="top-con">
+				<span>您好，欢迎来到 中酒网！</span>
+				<span><a href="#" class="red">去买家中心</a></span>
+				<span><a href="#" class="login login1">请登录</a></span>
+				<span><a href="#"
+					class="login">免费注册</a></span>
+				<ul id="top-nav">
+					<li class="ht-p">
+						<a href="#">我的中酒网<i></i></a>
+						<ul class="hide-top">
+							<li><a href="#">已卖到的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">已卖到的店铺</a></li>
+						</ul>
+					</li>
+					<li><a href="#">购物车<strong>0</strong>件</a></li>
+					<li class="ht-p">
+						<a href="#">微信端</a>
+						<div class="hide-top">
+							<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Plat/Site/qrCode.png" />
+						</div>
+					</li>
+					<li class="ht-p">
+						<a href="#">APP</a>
+						<div class="hide-top">
+							<img src="img/app.jpg"/>
+							<p>扫描二维码</p>
+							<p class="red">下载手机客户端</p>
+						</div>
+					</li>
+					<li class="ht-p">
+						<a href="#">卖家中心<i></i></a>
+						<ul class="hide-top">
+							<li>商家入驻</li>
+							<li>已卖出商品</li>
+							<li>管理商品</li>
+						</ul>
+					</li>
+					<li class="ht-p">
+						<a href="#">网站导航<i></i></a>
+						<ul class="map hide-top">
+							<li>
+								<h3>买酒</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>
+								<h3>品牌</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>
+								<h3>其他</h3>
+								<a href="#">白酒</a>
+								<a href="#">葡萄酒</a>
+								<a href="#">黄酒</a>
+								<a href="#">洋酒</a>
+								<a href="#">白酒</a>
+								<a href="#">白酒</a>
+							</li>
+							<li>订购热线：400-798-9999</li>
+						</ul>
+					</li>
+					<li class="ht-p"><a href="#">订购热线：400-798-9999</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<!--logo-->
+		<div id="logo">
+			<a href="index.html"><img src="img/logo.png"/></a>
+			<ul class="step">
+				<li>1.我的购物车</li>
+				<li>2.填写核对订单信息</li>
+				<li>3.成功提交订单</li>
+			</ul>
+		</div>
+		<!--content-->
+		<div id="content">
+			<h3>我的购物车</h3>
+			<div class="car-list">
+				<!--列表头部-->
+				<div class="car-top">
+					<span><input type="checkbox" name="checkall" id="checkall" checked="checked"/>全选</span>
+					<span>商品</span>
+					<span>商城价</span>
+					<span>数量</span>
+					<span>操作</span>
+				</div>
+				<!--商品列表-->
+				<div class="car-main">
+					<div class="car-store">
+						<input type="checkbox" name="checkall" checked="checked"/>中酒自营
+					</div>
+					<ul class="good-list">
+						<li>
+							<input type="checkbox" name="checkitem" checked="checked"/>
+							<img src="img/gl-1.png"/>
+							<span>
+								<p><a href="detail.html" class="hov">52° 五粮液股份有限公司 五星级 500ml（两瓶装）</a></p>
+								<p>商品货号：A0001893</p>
+							</span>
+							<b class="red" data-price = "199">¥199.00</b>
+							<a href="javascript:;" class="reduce">-</a>
+							<input type="text" name="gd-num" id="gd-num1" class="gd-num" value="1" />
+							<a href="javascript:;" class="add">+</a>
+							<a href="javascript:;" class="delete">删除</a>
+						</li>
+						<li>
+							<input type="checkbox" name="checkitem" checked="checked" />
+							<img src="img/gl-2.png"/>
+							<span>
+								<p><a href="detail.html" class="hov">43°茅台迎宾酒 500ml（6瓶装）</a></p>
+								<p>商品货号：110323342900</p>
+							</span>
+							<b class="red" data-price = "329">¥329.00</b>
+							<a href="javascript:;" class="reduce">-</a>
+							<input type="text" name="gd-num" id="gd-num2" class="gd-num" value="1" />
+							<a href="javascript:;" class="add">+</a>
+							<a href="javascript:;" class="delete">删除</a>
+						</li>
+						<li>
+							<input type="checkbox" name="checkitem" checked="checked" />
+							<img src="img/gl-3.png"/>
+							<span>
+								<p><a href="detail.html" class="hov">52°贵州茅台集团 茅台醇原浆 V20 500ml （6瓶装）</a></p>
+								<p>商品货号：A0001800</p>
+							</span>
+							<b class="red" data-price = "199">¥199.00</b>
+							<a href="javascript:;" class="reduce">-</a>
+							<input type="text" name="gd-num" id="gd-num3" class="gd-num" value="1" >
+							<a href="javascript:;" class="add">+</a>
+							<a href="javascript:;" class="delete">删除</a>
+						</li>
+					</ul>
+					
+					
+					
+				</div>
+				<!--列表底部-->
+				<div class="car-bottom">
+					<span><input type="checkbox" name="checkall" id="checkall" checked="checked"/>全选</span>
+					<a href="javascript:;" class="clear">删除</a>
+					<span><b class="red">0</b>件商品</span>
+					<a href="javascript:;" id="pay">去结算</a>
+					<span class="total">总计（不含运费）：¥<i>0.00</i></span>
+				</div>
+			</div>
+			<!--隐藏区域，当购物车没有商品时显示-->
+			<div id="car-hide">
+				<p>购物车内暂时没有商品，<a href="login.html" class="red">登录</a>后，将显示您之前加入的商品
+<a href="index.html" class="red">去首页</a>挑选喜欢的商品</p>
+				
+				
+			</div>
+			
+			<!--推荐商品-->
+			<div id="sug-good">
+				<h3>商品推荐</h3>
+				<div class="sug-list">
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3878/1_220.png"/>
+						<p><a href="index.html">52°出口型白西凤绵柔凤香型500ml（6瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/80655/1_220.png"/>
+						<p><a href="index.html">52°贵州茅台集团 茅台醇原浆 V20 500ml （6瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/81335/1_220.png"/>
+						<p><a href="index.html">52° 五粮液股份有限公司 五星级  500ml（两瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3577/1_220.png"/>
+						<p><a href="index.html">52°泸州窖酒（窖藏龙窖） 500ml（6瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3802/1_220.png"/>
+						<p><a href="index.html">52°五粮液500ml+53°茅台飞天500ml（2瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/80329/1_220.png"/>
+						<p><a href="index.html">52°鸭溪窖-古酿 500ml （2瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/80666/1_220.png"/>
+						<p><a href="index.html">法国卡萨玛丽亚干红葡萄酒（6瓶装） </a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3414/1_220.png"/>
+						<p><a href="index.html">11.5°张裕干红葡萄酒750ml（6瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3568/1_220.png"/>
+						<p><a href="index.html">拉菲传奇波尔多 750ml（6瓶装）</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+					<div class="per-good">
+						<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/80787/1_220.png"/>
+						<p><a href="index.html"> 恋爱季 恋爱季甜白高泡 750ml + 恋爱季甜桃红高泡葡萄酒 750ml</a></p>
+						<a href="index.html"><div class="good-mask">去购买></div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

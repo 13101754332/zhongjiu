@@ -1,0 +1,26 @@
+/*订单*/
+#logo{
+	width: 990px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+#logo img{
+	float: left;
+}
+#logo .step{
+	width: 481px;
+	height: 58px;
+	float: right;
+	background: url(../img/step2.jpg) no-repeat;
+}
+.step li{
+	float: left;
+	width: 160px;
+	height: 23px;
+	text-align: center;
+	color: #b7c2c7;
+	margin-top: 35px;
+}
+.step li:nth-of-type(2){
+	color: #62c92b;
+}
