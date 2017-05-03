@@ -10,10 +10,7 @@
 		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/detial.js"></script>
-		<!--插件出现问题
-		*****************************************************************	
-		可能jquery版本不同导致js功能失效111-->
-		<!--<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>-->
+		<script type="text/javascript" src="jQuery-4ld20160227/jsAddress.js"></script>
 		
 	</head>
 	<body>
@@ -275,36 +272,19 @@
 					<div class="logis">
 						<dt>配送至</dt>   
 						<dd>
-							<!--<select id="province"> 
-						      	<option>----请选择省份----</option> 
-						        <option>北京</option> 
-						        <option>上海</option> 
-						        <option>江苏</option> 
-						    </select> 
-						    <select class="city"> 
-						   		<option>----请选择城市----</option> 
-						    </select> 
-						    <select class="city"> 
-						       <option>东城</option> 
-						       <option>西城</option> 
-						       <option>崇文</option> 
-						       <option>宣武</option> 
-						       <option>朝阳</option> 
-						    </select>  
-						    <select class="city"> 
-						       <option>黄浦</option> 
-						       <option>卢湾</option> 
-						       <option>徐汇</option> 
-						       <option>长宁</option> 
-						       <option>静安</option> 
-						    </select> 
-						    <select class="city"> 
-						       <option>南京</option> 
-						       <option>镇江</option> 
-						       <option>苏州</option> 
-						       <option>南通</option> 
-						       <option>扬州</option> 
-						    </select>--> 运费 ￥10 |  支持货到付款
+							<!--插件-->
+							地区：<select id="area"></select>  
+							省：<select id="cmbProvince"></select>  
+							市：<select id="cmbCity"></select>  
+							区：<select id="cmbArea"></select>  
+	  						<br />
+							<script type="text/javascript">  
+							    addressInit('area','cmbProvince','cmbCity','cmbArea','西北地区', '北京', '市辖区', '东城区');  
+							    //addressInit('Select1', 'Select2', 'Select3');  
+							</script>
+							<!--插件-->
+							
+							 运费 ￥10 |  支持货到付款
 						</dd>
 					</div>
 					<div class="service">
@@ -514,7 +494,7 @@
 							<a href="jvascript:;">追加评论(0)</a>
 						</div>
 						<ul class="buyer-list">
-							<li>
+							<!--<li>
 								<span>初次评价:</span>
 								<p>第二次买了，第一次买的准备泡酒喝，结果分给别人喝了，这次又买了一箱，谁也不给了，泡酒喝，最近准备再买一箱平时慢慢喝</p>
 								<span class="buyer-id">大家喜洋洋1120<i></i></span>
@@ -574,7 +554,7 @@
 								</strong>
 								</p>
 								<span class="buyer-id">大家喜洋洋1120<i></i></span>
-							</li>
+							</li>-->
 						</ul>
 						<div class="buyer-nav">
 							<a href="javascript:;" class="first">上一页</a>
@@ -582,10 +562,6 @@
 							<a href="javascript:;">2</a>
 							<a href="javascript:;">3</a>
 							<a href="javascript:;">4</a>
-							<a href="javascript:;">5</a>
-							<a href="javascript:;">...</a>
-							<a href="javascript:;">24</a>
-							<a href="javascript:;">25</a>
 							<a href="javascript:;">下一页</a>
 						</div>
 				<!--商品咨询-->

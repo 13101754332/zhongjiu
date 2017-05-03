@@ -37,6 +37,7 @@
 }
 #top-nav .hide-top{
 	display: none;
+	margin-top: -2px;
 }
 #top-nav .map li{
 	padding: 10px;
@@ -264,6 +265,7 @@
 	width: 90px;
 	height: 28px;
 }
+
 #hide .hide-left .hide-nav li a{
 	font-size: 13px;
 	line-height: 28px;
@@ -471,12 +473,16 @@
 	padding: 5px 10px;
 	text-align: center;
 }
+#shopcar a{
+	color: #fff;
+}
 #shopcar b{
 	display: block;
 	border-radius: 50%;
 	background: red;
 	font-size: 14px;
 	text-align: center;
+	
 }
 #waiter{
 	text-align: center;

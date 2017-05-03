@@ -1,0 +1,23 @@
+/*order*/
+$(function(){
+	//使用新地址
+	$('#new-mail').click(function(){
+		if($(this).prop('checked')==true){
+			$('.mail').show();
+		}else{
+			$('.mail').hide();
+		}
+	});
+	//输入优惠口令
+	$('.check-pword').toggle(function(){
+		//$('.pword').show();
+		$('.pword').css('display','block');
+		$('.check-pword').children('i').text('-');
+	},
+	function(){
+		//$('.pword').show();
+		$('.pword').css('display','none');
+		$('.check-pword').children('i').text('+');
+	});
+});
+

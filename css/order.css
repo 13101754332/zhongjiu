@@ -1,4 +1,10 @@
 /*订单*/
+body{
+	color: #b7c2c7;
+}
+h3{
+	color: #000;
+}
 #logo{
 	width: 990px;
 	margin: 0 auto;
@@ -38,6 +44,7 @@
     background-color: #eff2f5;
     padding-left:20px ;
     font-size: 14px;
+    color: #000;
 }
 /*user-info*/
 .user-info{
@@ -70,6 +77,36 @@
 	background: #ff4d50;
 	color: #fff;
 	margin-left: 50px;
+}
+.mail{
+	width: 888px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+}
+.mail label{
+	display: block;
+	height: 36px;
+	color: #000;
+	padding: 0;
+}
+.mail label span{
+	display: inline-block;
+	width: 82px;
+	text-align: right;
+}
+.mail label{
+	line-height: 36px;
+	
+}
+.mail label:nth-of-type(1){
+	background: #ffe8e8;
+	border: 1px solid #db9a9a;
+}
+.mail label input{
+	height: 24px;
+	border:1px solid #ddd;
+	outline: 0;
 }
 /*send*/
 .send{
@@ -116,6 +153,7 @@
 }
 .table-title{
 	overflow: hidden;
+	color: #000;
 }
 .table-title span{
 	float: left;
@@ -160,16 +198,94 @@
 	margin-right: 68px;
 }
 /*给卖家留言*/
-/*给卖家留言*/
-/*给卖家留言*/
-/*给卖家留言*/
-/*给卖家留言*/
-/*给卖家留言*/
+.message{
+	width: 900px;
+	overflow: hidden;
+	background: #eff2f5;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.mes-left,.mes-right{
+	float: left;
+}
+.mes-left span,.mes-left textarea{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.mes-left textarea{
+	background: #f5f8fa;	
+	border: 1px dashed #ddd;
+	outline: 0;
+	resize: none;
+}
+.mes-right p{
+	margin-left: 340px;
+	margin-top: 5px;
+}
+.mes-right p:nth-of-type(1){
+	margin-top: 25px;
+}
+.mes-right p b,.mes-right p strong{
+	font-weight: 100;
+	margin: 0 20px;
+}
+.mes-right span{
+	display: block;
+	width: 180px;
+	height: 40px;
+	border: 1px solid #db9a9a;
+	background: #ffe8e8;
+	line-height: 40px;
+	margin-left: 340px;
+	display: none;
+}
+.mes-right p i{
+	font-style: normal;
+}
+.mes-right span input{
+	width: 120px;
+	margin-left: 5px;
+}
+.mes-right span a{
+	display: inline-block;
+	width: 40px;
+	line-height: 18px;
+	background: #ff4d50;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;	
+	margin-left: 5px;
+}
+/*integral*/
+.integral{
+	overflow: hidden;
+	margin-top: 20px;
+	color: #000;
+}
+.integral p{
+	text-align: right;
+	line-height: 25px;
+}
+.integral p strong{
+	margin-left: 30px;
+}
+.integral p b{
+	margin-left: 51px;
+}
+.integral p:nth-of-type(3),.integral p:nth-of-type(4){
+	margin-right: 90px;
+}
+
+
+
+
 /*con-bottom*/
 .con-bottom{
 	height: 50px;
 	background: #eff2f5;
 	line-height: 50px;
+	color: #000;
 }
 .con-bottom a{
 	margin-left: 20px;

@@ -6,7 +6,8 @@ $(function(){
 	bBtn3=false,
 	bBtn4=false,
 	bBtn5=false,
-	bBtn6=false;
+	bBtn6=false,
+	oTimer=null;
 	$('input').on('focus',function(){
 		iIndex=$('input').index($(this));
 			$('.hide').each(function(k,v){
@@ -29,9 +30,18 @@ $(function(){
       }
 	});
 	//图形验证
+	//加载完毕随机显示一张图片
+	var i = Math.floor(Math.random()*10);
+	$('.vali img').eq(i).show().siblings().hide();
+	//点击图片改变验证码图片
+	$('.vali img').click(function(){
+		 i = Math.floor(Math.random()*10);
+	$('.vali img').eq(i).show().siblings().hide();
+	});
+	//输入框失去焦点时判断验证码是否正确
 	$('.vali input').on('blur',function(){
 		var str = $(this).val();
-		if(str===$('.vali img').data('num')){
+		if(str===$('.vali img').eq(i).data('num')){
 			$('.vali .hide').hide();
 			bBtn2=true;
 		}else{
@@ -78,7 +88,20 @@ $(function(){
 			 bBtn5=false;
 		}
 	});
-	
+	$('#send').click(function(){
+		var iTimer = 60;
+		$('#send').text(iTimer+'秒后重新发送');
+		clearInterval(oTimer);
+		oTimer=setInterval(function(){
+			iTimer--;
+			$('#send').text(iTimer+'秒后重新发送');
+			if (iTimer<=0) {
+				clearInterval(oTimer);
+				$('#send').text('点击重新发送');
+			}
+		},1000);
+		
+	});
 	//提交验证
 	//***************************************
 	//问题点击按钮时单选框（双选框）会默认选中

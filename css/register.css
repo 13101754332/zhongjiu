@@ -131,10 +131,17 @@ body{
 #main .vali input{
 	height: 34px;
 }
-.vali img{
+.vali a{
 	display: inline-block;
 	height: 38px;
 	margin-left: 20px;
+	position: relative;
+	width: 107px;
+}
+.vali img{
+	position: absolute;
+	height: 38px;
+	display: none;
 }
 .vali b,.vali img,.vali input{
 	float: left;

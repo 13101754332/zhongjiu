@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/order.js"></script>
+		<script type="text/javascript" src="jQuery-4ld20160227/jsAddress.js"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -108,7 +109,31 @@
 			<!--user-info-->
 			<div class="user-info">
 				<h3>收货人信息<a href="javascript:;" class="red">[修改]</a></h3>
-				<label><input type="radio" name="radio" id="radio"/>使用新地址</label>
+				<label><input type="radio" name="new-mail" id="new-mail"/>使用新地址</label>
+				<!--隐藏区域-详细地址-->
+				<div class="mail">
+					<label><span><b class="red">*</b>收货人：</span><input type="text" /></label>
+					<label>
+						<span><b class="red">*</b>所在地区：</span>
+						<!--插件-->
+						地区：<select id="area"></select>  
+						省：<select id="cmbProvince"></select>  
+						市：<select id="cmbCity"></select>  
+						区：<select id="cmbArea"></select>  
+						<br /><br />  
+  
+						<script type="text/javascript">  
+						    addressInit('area','cmbProvince','cmbCity','cmbArea','西北地区', '北京', '市辖区', '东城区');  
+						    //addressInit('Select1', 'Select2', 'Select3');  
+						</script>
+						<!--插件-->
+					</label>
+					<label><span><b class="red">*</b>详细地址：</span><input type="text" /></label>
+					<label><span><b class="red">*</b>电话：</span><input type="text" /></label>
+				</div>
+				
+				
+				
 				<a href="javascript:;" class="save">保存收货人信息</a>
 			</div>
 			<!--send-->
@@ -119,7 +144,7 @@
 			<!--bill-->
 			<div class="bill">
 				<h3>发票信息</h3>
-				<input type="radio" name="bill"/>不需要
+				<input type="radio" name="bill" checked="checked"/>不需要
 				<input type="radio" name="bill"/>需要发票
 			</div>
 			<!--merchbill商品清单-->
@@ -178,24 +203,33 @@
 						</li>
 					</ul>
 					<!--给卖家留言-->
-					<!--给卖家留言-->
-					<!--给卖家留言-->
-					<!--给卖家留言-->
-					<!--给卖家留言-->
-					
-					
-					
-					
-					
-					
+					<div class="message">
+						<!--左边留言-->
+						<div class="mes-left">
+							<span>给商家留言：</span><textarea name="mes-txt" id="mes-txt" cols="30" rows="3" placeholder="选填"></textarea>
+						</div>
+						<!--右边信息-->
+						<div class="mes-right">
+							<p><a href="javascript:;" class="red check-pword">(<i>+</i>)输入券号或口令</a></p>
+							<span class="pword"><input type="text" name="pword" id="pword"/><a href="javascript:;">确认</a></span>
+							<p>店铺合计（含运费）：<b>￥727.00</b></p>
+							<p>（满99.00免运费）运费：<strong>免运费</strong></p>
+						</div>
+					</div>
+					<!--积分信息-->
+					<div class="integral">
+						<p><span class="red">3</span> 件商品，总商品金额：<strong>￥727.00</strong></p>
+							<p>运费：<b>￥0.00</b></p>
+							<p><input type="checkbox" name="checkint" id="checkint"/>使用平台积分</p>
+							<p>可用 3 积分</p>
+					</div>
 				</div>
 				<!--商品清单详细列表-->
-				
 			</div>
 			<!--con-bottom-->
 			<div class="con-bottom">
 				<a href="shoppingcar.html" class="red">返回修改购物车</a>
-				<strong>返回修改购物车应付总额：<b class="red">￥1454.00</b>元</strong>
+				<strong>应付总额：<b class="red">￥727.00</b>元</strong>
 				<span>可获得平台积分<i>727</i>分</span>
 			</div>
 		</div>

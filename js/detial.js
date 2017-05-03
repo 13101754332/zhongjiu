@@ -1,7 +1,8 @@
 $(function(){
 	var 
 	iIndexBigger=0,
-	iGoods=1;
+	iGoods=1,
+	i=0;
 	//导航菜单
 	$('.nav-left').on('mousemove',function(){
 		$('.nav-left li').show();
@@ -99,7 +100,6 @@ $(function(){
 	});
 	//商品详情介绍、评论、咨询栏随滚动事件固定
 	$(window).scroll(function(){
-		console.log($(window).scrollTop());
 		if($(window).scrollTop()>=850){
 			$('.introduce').css('position','fixed');
 		}else{
@@ -127,32 +127,73 @@ $(function(){
 			$('.detial-pic').show();
 		}
 	});
-	
-	
-//area插件	
-/*var currentShowCity=0;
-$(document).ready(function(){
-   $("#province").change(function(){
-   $("#province option").each(function(i,o){
-   if($(this).attr("selected"))
-   {
-  
-   $(".city").hide();
-   $(".city").eq(i).show();
-   currentShowCity=i;
-   }
-   });
-   });
-   $("#province").change();
-});
-function getSelectValue(){
-alert("1级="+$("#province").val());
-  
-$(".city").each(function(i,o){
-                    
- if(i == currentShowCity){
-alert("2级="+$(".city").eq(i).val());
- }
-   });
-}*/
+	//ajax获取评论内容 
+	//页面打开时获取
+	$.ajax({
+		type:"get",
+		url:"message.php",
+		data:{page:1},
+		async:true,
+		success:function(data){
+			//将字符串转化为对象
+			data=JSON.parse(data);
+			data.forEach(function(v){
+				$('.buyer-list').append(`<li>
+								<span>初次评价:</span>
+								<p>${v.content}</p>
+								<span class="buyer-id">${v.username}<i></i></span>
+							</li>`)
+			})
+		}
+	});
+	//点击列表导航按钮获取对应评论内容
+	$('.buyer-nav a').click(function(){
+		var iIndex=$(this).index();
+		if(iIndex==5){
+			i++;
+			if(i>=3){
+				i=3;
+			}
+		}else if(iIndex==0){
+			i--;
+			if(i<=0){
+				i=0;
+			}
+		}else{
+			i=iIndex-1;
+		}
+		
+		if(i<=0){
+			$('.buyer-nav a').eq(0).hide();
+		}else{
+			$('.buyer-nav a').eq(0).css('display','inline-block');
+		};
+		if(i>=3){
+			$('.buyer-nav a').eq(5).hide();
+		}else{
+			$('.buyer-nav a').eq(5).show();
+		};
+		$('.buyer-list').empty();
+		$('.buyer-nav a').eq((i+1)).addClass('buyer-act').siblings().removeClass('buyer-act');
+		$.ajax({
+			type:"get",
+			url:"message.php",
+			data:{page:i+1},
+			async:true,
+			success:function(data){
+				//将字符串转化为对象
+				data=JSON.parse(data);
+				data.forEach(function(v){
+					$('.buyer-list').append(`<li>
+								<span>初次评价:</span>
+								<p>${v.content}</p>
+								<span class="buyer-id">${v.username}<i></i></span>
+							</li>`)
+				})
+			}
+		});
+		
+		
+		
+	});
 });
