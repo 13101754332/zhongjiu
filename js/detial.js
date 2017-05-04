@@ -38,11 +38,8 @@ require(['jquery','cookie'],function($,cookie){
 			
 			//存储cookie
 			cookie.setCookie('goods',JSON.stringify(aGoods),7);
-		});	
-	});
-});
-$(function(){
-	var 
+		});
+		var 
 	iIndexBigger=0,
 	iGoods=1,
 	i=0;
@@ -235,5 +232,6 @@ $(function(){
 				})
 			}
 		});
+	});
 	});
 });
