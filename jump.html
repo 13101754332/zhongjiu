@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录跳转</title>
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var
+			iSecond=3;
+			$('span').text(iSecond);
+			setTimeout(function(){
+				window.open('index.html','_self')
+			},3000);
+			setInterval(function(){
+				iSecond--;
+				$('span').text(iSecond);
+			},1000)
+			})
+			
+	</script>
+	<style type="text/css">
+		body{
+			background: #ccc;
+		}
+		div{
+			width: 300px;
+			height: 200px;
+			background: #fff;
+			border: 1px solid #000;
+			margin: 100px auto;
+			
+		}
+		h2,p{
+			text-align: center;
+		}
+		h2{
+			margin-top: 50px;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<div>
+			<h2>登录成功！</h2>
+			<p><span></span>秒后跳转到主页</p>
+		</div>
+		
+	</body>
+</html>
