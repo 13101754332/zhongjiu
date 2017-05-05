@@ -7,8 +7,8 @@ require(['jquery','cookie'],function($,cookie){
 		//添加商品到购物车
 		$('#car').click(function(){
 			//第一次添加商品	
-			var 
 			//假设商品没添加过
+			var 
 			isAdd = false,
 			sGoods = cookie.getCookie('goods');
 			if(typeof sGoods === 'undefined'){

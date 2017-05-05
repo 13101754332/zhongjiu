@@ -119,5 +119,9 @@ $(function(){
 		}
 		
 	});
-	
+	$('#register').submit(function(){
+		var  aData = $(this).serialize();
+		$.post('js/adduser.php',aData,function(){
+		});
+	});
 });
